@@ -7,12 +7,12 @@ load_dotenv()   # path to where .env file is located. leave blank if in same dir
 
 # set up streamlit
 st.set_page_config(
-    page_title="˚.🎀༘⋆ Generative AI Chatbot, hmmm",
+    page_title="˚.🎀༘⋆ Generative AI Chatbot",
     page_icon = "⸜(｡˃ ᵕ ˂ )⸝♡", # emojhttps://emojidb.org/cute-japanese-emojis
     layout = 'centered'
 )
 
-st.title("Generative AI CHatbot, ask me a question")
+st.title("Generative AI CHatbot L2G, ask me a question")
 
 # initiate chat history
 if "chat_history" not in st.session_state:
@@ -43,4 +43,5 @@ if user_prompt:
     with st.chat_message('assistant'):
 
         st.markdown(assistant_response)
+
 
