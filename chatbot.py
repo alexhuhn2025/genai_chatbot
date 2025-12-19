@@ -1,15 +1,7 @@
 from dotenv import load_dotenv
 import streamlit as st
 from langchain_groq import ChatGroq
-# import json
-# import os 
 
-# env_path = "//ad.corp.loans2go.co.uk/dfs/Shared/Application Support/Private/Alex H/env/"
-# env_file = 'environment.json'
-# with open(env_path + env_file, 'r') as fp:
-#     env_data = json.load(fp)
-
-# os.environ["GROQ_API_KEY"] = env_data["groq_api_key"]
 # load the env variables
 load_dotenv()   # path to where .env file is located. leave blank if in same directory. do not need to run os.environ[]=...
 
@@ -61,4 +53,5 @@ if user_prompt:
     st.session_state.chat_history.append({'role':'assistant','content':assistant_response})
 
     with st.chat_message('assistant'):
+
         st.markdown(assistant_response)
