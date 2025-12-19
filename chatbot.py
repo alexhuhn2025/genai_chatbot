@@ -3,12 +3,12 @@ import streamlit as st
 from langchain_groq import ChatGroq
 
 # load the env variables
-load_dotenv()   # path to where .env file is located. leave blank if in same directory. do not need to run os.environ[]=...
+load_dotenv()   
 
 # set up streamlit
 st.set_page_config(
     page_title="˚.🎀༘⋆ Generative AI Chatbot",
-    page_icon = "⸜(｡˃ ᵕ ˂ )⸝♡", # emojhttps://emojidb.org/cute-japanese-emojis
+    page_icon = "⸜(｡˃ ᵕ ˂ )⸝♡",
     layout = 'centered'
 )
 
@@ -43,6 +43,7 @@ if user_prompt:
     with st.chat_message('assistant'):
 
         st.markdown(assistant_response)
+
 
 
 
