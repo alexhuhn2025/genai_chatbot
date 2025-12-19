@@ -12,7 +12,7 @@ st.set_page_config(
     layout = 'centered'
 )
 
-st.title("Generative AI CHatbot L2G, ask me a question")
+st.title("Generative AI CHatbot L2G, ask me a question, any question, like what is better to read, dostoyevsky or tolstoy?")
 
 # initiate chat history
 if "chat_history" not in st.session_state:
@@ -43,5 +43,6 @@ if user_prompt:
     with st.chat_message('assistant'):
 
         st.markdown(assistant_response)
+
 
 
